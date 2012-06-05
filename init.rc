@@ -110,6 +110,7 @@ on fs
     #mount ext4 /dev/block/mmcblk0p9 /system
     mount ext4 /dev/block/mmcblk0p9 /system noatime wait rw
     chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/plugin-container
     chmod 0755 /system/b2g/updater
     
     exec sfsck /dev/block/mmcblk0p7 ext4
